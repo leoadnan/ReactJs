@@ -2,11 +2,11 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
 class Jumbotron extends Component {
-    propTypes = {
-        title: PropTypes.string,
-        text: PropTypes.string,
-        link: PropTypes.string
-    }
+    // propTypes = {
+    //     title: PropTypes.string,
+    //     text: PropTypes.string,
+    //     link: PropTypes.string
+    // }
 
     static defaultProps = {
 
@@ -21,7 +21,7 @@ class Jumbotron extends Component {
                 <h1>{this.props.title}</h1>
                 <p>{this.props.text}</p>
                 <p>
-                    <a className="btn btn-primary btn-lg" href="#" onClick={this.handleOnClick.bind(this,'Hello')} role="button">Learn more</a>
+                    <a className="btn btn-primary btn-lg" onClick={this.handleOnClick.bind(this,'Hello')} role="button">Learn more</a>
                 </p>
             </div>
         );
@@ -32,9 +32,9 @@ class Jumbotron extends Component {
     }
 }
 
-/*Jumbotron.propTypes = {
+Jumbotron.propTypes = {
     title: PropTypes.string,
     text: PropTypes.string,
     link: PropTypes.string
-}*/
+}
 export default Jumbotron;

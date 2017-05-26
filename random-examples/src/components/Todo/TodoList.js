@@ -13,7 +13,7 @@ class TodoList extends Component {
                         return <li 
                         className="list-group-item" 
                         key={todo.id}> <span onClick={this.editTodo.bind(this,todo)}>{todo.text} </span>
-                              <a href="#" onClick={this.handleOnClick.bind(this,todo)}>x</a>
+                              <a onClick={this.handleOnClick.bind(this,todo)}>x</a>
                         </li>
                     })
                 }
