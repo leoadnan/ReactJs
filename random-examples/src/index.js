@@ -51,16 +51,7 @@ import Home from './components/pro-react/Routing/Home';
 import RepoDetails from './components/pro-react/Routing/RepoDetails'
 
 //Start Pro React 
-ReactDOM.render(
-
-    // <BrowserRouter>
-    //     <Switch>
-    //         <Route exact path="/" component={App} />
-    //         
-    //         
-    //         
-    //     </Switch>
-    // </BrowserRouter>    
+ReactDOM.render( 
     
     <Router history={ browserHistory }>
         <Route path="/" component={App} />

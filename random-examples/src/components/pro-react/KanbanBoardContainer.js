@@ -191,7 +191,7 @@ class KanbanBoardContainer extends Component {
 
     persistCardDrag(cardId, status) {
         // Find the index of the card
-        let cardIndex = this.state.cards.findIndex((card) => card.id == cardId);
+        let cardIndex = this.state.cards.findIndex((card) => card.id === cardId);
         // Get the current card
         let card = this.state.cards[cardIndex]
         fetch(`${API_URL}/cards/${cardId}`, {

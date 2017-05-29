@@ -17,7 +17,7 @@ class CheckList extends Component {
                         this.props.taskCallbacks.toggle.bind(null, this.props.cardId, task.id, taskIndex)
                     }/>
                     {task.name}{' '}
-                    <a href="#" className="checklist__task--remove" onClick={
+                    <a className="checklist__task--remove" onClick={
                         this.props.taskCallbacks.delete.bind(null, this.props.cardId, task.id, taskIndex)
                     }/>
                 </li>
