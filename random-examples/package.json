@@ -5,6 +5,8 @@
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "bootstrap": "^3.3.7",
+    "fbemitter": "^2.1.1",
+    "flux": "^3.1.2",
     "history": "^3.3.0",
     "jquery": "^3.2.1",
     "marked": "^0.3.6",
@@ -24,6 +26,7 @@
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
+    "eslint-plugin-jsx-a11y": "^5.0.3",
     "node-sass": "^4.5.3",
     "react-scripts": "1.0.2"
   },

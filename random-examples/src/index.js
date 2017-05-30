@@ -49,6 +49,7 @@ import Repos from './components/pro-react/Routing/Repos';
 import Home from './components/pro-react/Routing/Home';
 import RepoDetails from './components/pro-react/Routing/RepoDetails'
 import ServerError from './components/pro-react/Routing/ServerError'
+import FluxApp from './components/pro-react/flux/App'
 
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import createBrowserHistory from 'history/lib/createBrowserHistory';
@@ -69,6 +70,7 @@ ReactDOM.render(
             </Route>
             <Route path = "error" component = {ServerError} />
         </Route>
+        <Route path="/fluxapp" component={FluxApp} />
     </Router>
 ,document.getElementById('kanbanboard'));
 //End Pro React 
