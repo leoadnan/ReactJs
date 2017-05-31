@@ -22,6 +22,7 @@ class App extends Component {
     render() {
         return (
             <div>
+                <link rel="stylesheet" href="/flux.css"/>
                 <header>FluxTrust Bank</header>
                 <h1>Your balance is ${(this.state.balance).toFixed(2)}</h1>
                 <h2>Your Points Rewards Tier is {this.state.rewardsTier}</h2>

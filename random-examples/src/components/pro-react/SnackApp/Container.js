@@ -8,6 +8,7 @@ class Container extends Component {
     render() {
         return (
             <div>
+                <link rel="stylesheet" href="/snackapp.css" />
                 <Snack name='Chips'/>
                 <Snack name='Cupcake'/>
                 <Snack name='Donut'/>

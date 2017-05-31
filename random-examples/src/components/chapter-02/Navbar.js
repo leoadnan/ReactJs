@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
-import * as ReactBootstrap from 'react-bootstrap';
+import {Link} from 'react-router-dom';
+
+// import * as ReactBootstrap from 'react-bootstrap';
 
 // import { Navbar, Jumbotron, Button } from 'react-bootstrap';
 // import { Button } from 'react-bootstrap';
@@ -9,7 +11,7 @@ import * as ReactBootstrap from 'react-bootstrap';
 
 class Navbar extends Component {
     render() {
-        /*var navbarHTML = <nav className="navbar navbar-inverse navbar-static-top" role="navigation">
+        var navbarHTML = <nav className="navbar navbar-inverse navbar-static-top">
             <div className="container">
                 <div className="navbar-header">
                     <button
@@ -22,19 +24,33 @@ class Navbar extends Component {
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
                     </button>
-                    <a className="navbar-brand" href="#">EIS</a>
+                    <Link className="navbar-brand" to="/">React Demo Apps</Link>
                 </div>
                 <div className="navbar-collapse collapse">
                     <ul className="nav navbar-nav">
-                        <li className="active"><a href="#">Home</a></li>
-                        <li><a href="#">Edit Profile</a></li>
+                        <li><Link to="/jumbotron">Jumbotron</Link></li>
+                        <li><Link to="/todoapp">Todo App</Link></li>
+                        <li><Link to="/ticketsapp">Tickets</Link></li>
                         <li className="dropdown">
-                            <a href="#" className="dropdown-toggle" data-toggle="dropdown">Help Desk
+                            <a href="#" className="dropdown-toggle" data-toggle="dropdown">More
                                 <b className="caret"></b>
                             </a>
                             <ul className="dropdown-menu">
-                                <li><a href="#">View Tickets</a></li>
-                                <li><a href="#">New Ticket</a></li>
+                                <li><Link to="/myapp">My App</Link></li>
+                                <li><Link to="/loginform">Login Page</Link></li>
+                                <li><Link to="/modal">Modal</Link></li>
+                                <li><Link to="/sidebar">Sidebar</Link></li>
+                            </ul>
+                        </li><li className="dropdown">
+                            <a href="#" className="dropdown-toggle" data-toggle="dropdown">Mastering React
+                                <b className="caret"></b>
+                            </a>
+                            <ul className="dropdown-menu">
+                                <li><Link to="/contacts">Contacts</Link></li>
+                                <li><Link to="/shoppinglist">Shopping List</Link></li>
+                                <li><Link to="/snackapp">Snack App</Link></li>
+                                <li><Link to="/aircheapapp">Air cheap app</Link></li>
+                                <li><Link to="/fluxapp">Flux App</Link></li>
                             </ul>
                         </li>
                     </ul>
@@ -43,34 +59,34 @@ class Navbar extends Component {
         </nav>
 
 
-        return (navbarHTML);*/
+        return (navbarHTML);
 
-   var Nav= ReactBootstrap.Nav;
-   var Navbar= ReactBootstrap.Navbar;
-   var NavItem= ReactBootstrap.NavItem;
-   var NavDropdown = ReactBootstrap.NavDropdown;
-   var MenuItem= ReactBootstrap.MenuItem;
-   var navbarReact =(
-            <Navbar inverse>
-                <Navbar.Header>
-                    <Navbar.Brand>
-                        <a>EIS</a>
-                    </Navbar.Brand>
-                    <Navbar.Toggle />
-                </Navbar.Header>
-                <Navbar.Collapse>
-                    <Nav>
-                        <NavItem eventKey={1} href="/">Home</NavItem>
-                        <NavItem eventKey={2} href="#">Edit Profile</NavItem>
-                        <NavDropdown eventKey={3}  id="basic-nav-dropdown" title="dropdown">
-                            <MenuItem eventKey={3.1}>View Tickets</MenuItem>
-                            <MenuItem eventKey={3.2}>New Ticket</MenuItem>
-                        </NavDropdown>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar> 
-        );
-        return (navbarReact);
+//    var Nav= ReactBootstrap.Nav;
+//    var Navbar= ReactBootstrap.Navbar;
+//    var NavItem= ReactBootstrap.NavItem;
+//    var NavDropdown = ReactBootstrap.NavDropdown;
+//    var MenuItem= ReactBootstrap.MenuItem;
+//    var navbarReact =(
+//             <Navbar inverse>
+//                 <Navbar.Header>
+//                     <Navbar.Brand>
+//                         <a>EIS</a>
+//                     </Navbar.Brand>
+//                     <Navbar.Toggle />
+//                 </Navbar.Header>
+//                 <Navbar.Collapse>
+//                     <Nav>
+//                         <NavItem eventKey={1} href="/">Home</NavItem>
+//                         <NavItem eventKey={2} href="#">Edit Profile</NavItem>
+//                         <NavDropdown eventKey={3}  id="basic-nav-dropdown" title="dropdown">
+//                             <MenuItem eventKey={3.1}>View Tickets</MenuItem>
+//                             <MenuItem eventKey={3.2}>New Ticket</MenuItem>
+//                         </NavDropdown>
+//                     </Nav>
+//                 </Navbar.Collapse>
+//             </Navbar> 
+//         );
+//         return (navbarReact);
     }
 }
 

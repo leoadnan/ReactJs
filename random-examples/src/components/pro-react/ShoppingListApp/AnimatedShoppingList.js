@@ -58,6 +58,7 @@ class AnimatedShoppingList extends Component {
             ));
         return (
             <div>
+                <link rel="stylesheet" href="/react-animation.css" />
                 <ReactCSSTransitionGroup transitionName="example"
                                         transitionEnterTimeout={300}
                                         transitionLeaveTimeout={300}
