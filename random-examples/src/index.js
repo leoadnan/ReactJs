@@ -50,12 +50,14 @@ import Home from './components/pro-react/Routing/Home';
 import RepoDetails from './components/pro-react/Routing/RepoDetails'
 import ServerError from './components/pro-react/Routing/ServerError'
 import FluxApp from './components/pro-react/flux/App'
+import AirCheapApp from './components/pro-react/AirCheapApp/App';
 
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import createBrowserHistory from 'history/lib/createBrowserHistory';
 //Start Pro React 
 ReactDOM.render( 
     
+
     <Router history={ createBrowserHistory() }>
         <Route path="/" component={App} />
         <Route path="/contacts" component={ContactsApp} />
@@ -71,6 +73,7 @@ ReactDOM.render(
             <Route path = "error" component = {ServerError} />
         </Route>
         <Route path="/fluxapp" component={FluxApp} />
+        <Route path="/aircheapapp" component={AirCheapApp} />
     </Router>
 ,document.getElementById('kanbanboard'));
 //End Pro React 
