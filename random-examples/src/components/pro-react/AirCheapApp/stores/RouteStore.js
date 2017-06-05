@@ -1,6 +1,8 @@
 import AppDispatcher from '../AppDispatcher';
 import constants from '../constants';
 import {MapStore} from 'flux/utils';
+
+//It allows to hold multiple key-value pairs. There are only two possible keys, origin and destination
 class RouteStore extends MapStore {
     reduce(state, action) {
         switch (action.type) {

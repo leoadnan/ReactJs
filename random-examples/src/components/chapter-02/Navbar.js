@@ -41,7 +41,8 @@ class Navbar extends Component {
                                 <li><Link to="/modal">Modal</Link></li>
                                 <li><Link to="/sidebar">Sidebar</Link></li>
                             </ul>
-                        </li><li className="dropdown">
+                        </li>
+                        <li className="dropdown">
                             <a href="#" className="dropdown-toggle" data-toggle="dropdown">Mastering React
                                 <b className="caret"></b>
                             </a>
@@ -51,6 +52,24 @@ class Navbar extends Component {
                                 <li><Link to="/snackapp">Snack App</Link></li>
                                 <li><Link to="/aircheapapp">Air cheap app</Link></li>
                                 <li><Link to="/fluxapp">Flux App</Link></li>
+                            </ul>
+                        </li>
+                        <li className="dropdown">
+                            <a href="#" className="dropdown-toggle" data-toggle="dropdown">Routing V4
+                                <b className="caret"></b>
+                            </a>
+                            <ul className="dropdown-menu">
+                                <li><Link to="/quickstart">Quick Start</Link></li>
+                            </ul>
+                        </li>
+                        <li className="dropdown">
+                            <a href="#" className="dropdown-toggle" data-toggle="dropdown">Redux Examples
+                                <b className="caret"></b>
+                            </a>
+                            <ul className="dropdown-menu">
+                                <li><Link to="/redux/reminderpro">Reminder Pro</Link></li>
+                                <li><Link to="/redux/goalcoach">Goal Coach</Link></li>
+                                <li><Link to="/youtubesearchapp">Youtube Search App</Link></li>
                             </ul>
                         </li>
                     </ul>

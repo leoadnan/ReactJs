@@ -1,4 +1,13 @@
 // Place your settings in this file to overwrite default and user settings.
 {
-    "guides.normal.width": 3
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.DS_Store": true,
+        "node_modules/": false,
+        "dist/": false,
+        "reports/": true,
+        ".vscode/": true,
+        "typings/": false
+    }
 }
