@@ -20,21 +20,9 @@
    },
    "parser": "babel-eslint",
    "rules": {
-      "indent": [
-         "error",
-         4,
-         {
-            "SwitchCase": 1
-         }
-      ],
-      "quotes": [
-         "error",
-         "single"
-      ],
-      "semi": [
-         "error",
-         "always"
-      ],
+      "indent": ["error",4,{"SwitchCase": 1}],
+      "quotes": ["error","single"],
+      "semi": ["error","always"],
       "no-console": 0,
       "strict": 1,
       "comma-dangle": 0

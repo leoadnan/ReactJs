@@ -19,9 +19,10 @@ import SnackApp from './components/pro-react/SnackApp/SnackApp';
 import Routingv4QuickStart from './components/react-router-v4/QuickStart';
 
 import ReminderProApp from './components/Redux/ReminderPro/AppContainer';
-import GoalCoachApp from './components/Redux/GoalCoach/AppContainer';
 
 import YouTubeSearchApp from './modern_react_with_redux/youtube_search/App';
+import BookListApp from './modern_react_with_redux/book_list/app';
+import WeatherApp from './modern_react_with_redux/weather/app';
 
 // import App from './components/mastering-react/app';
 class App extends Component {
@@ -52,8 +53,9 @@ class App extends Component {
                                     <Route path="/snackapp" component={SnackApp} />
                                     <Route path="/quickstart" component={Routingv4QuickStart} />
                                     <Route path="/redux/reminderpro" component={ReminderProApp} />
-                                    <Route path="/redux/goalcoach" component={GoalCoachApp} />
                                     <Route path="/youtubesearchapp" component={YouTubeSearchApp} />
+                                    <Route path="/booklistapp" component={BookListApp} />
+                                    <Route path="/weatherapp" component={WeatherApp} />
                                 </div>
                             </div>
                         </div>

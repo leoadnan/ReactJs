@@ -68,8 +68,9 @@ class Navbar extends Component {
                             </a>
                             <ul className="dropdown-menu">
                                 <li><Link to="/redux/reminderpro">Reminder Pro</Link></li>
-                                <li><Link to="/redux/goalcoach">Goal Coach</Link></li>
                                 <li><Link to="/youtubesearchapp">Youtube Search App</Link></li>
+                                <li><Link to="/booklistapp">Book List App</Link></li>
+                                <li><Link to="/weatherapp">Weather App</Link></li>
                             </ul>
                         </li>
                     </ul>
