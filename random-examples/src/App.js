@@ -22,7 +22,7 @@ import ReminderProApp from './components/Redux/ReminderPro/AppContainer';
 
 import YouTubeSearchApp from './modern_react_with_redux/youtube_search/App';
 import BookListApp from './modern_react_with_redux/book_list/app';
-import WeatherApp from './modern_react_with_redux/weather/app';
+import WeatherApp from './modern_react_with_redux/weather/AppContainer';
 
 // import App from './components/mastering-react/app';
 class App extends Component {
