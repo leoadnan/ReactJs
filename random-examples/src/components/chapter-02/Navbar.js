@@ -71,6 +71,7 @@ class Navbar extends Component {
                                 <li><Link to="/youtubesearchapp">Youtube Search App</Link></li>
                                 <li><Link to="/booklistapp">Book List App</Link></li>
                                 <li><Link to="/weatherapp">Weather App</Link></li>
+                                <li><Link to="/reduxbankapp">Bank App</Link></li>
                             </ul>
                         </li>
                     </ul>

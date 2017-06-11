@@ -23,8 +23,8 @@ import ReminderProApp from './components/Redux/ReminderPro/AppContainer';
 import YouTubeSearchApp from './modern_react_with_redux/youtube_search/App';
 import BookListApp from './modern_react_with_redux/book_list/app';
 import WeatherApp from './modern_react_with_redux/weather/AppContainer';
+import ReduxBankApp from './modern_react_with_redux/bank/BankAppContainer';
 
-// import App from './components/mastering-react/app';
 class App extends Component {
     constructor() {
         super();
@@ -56,6 +56,7 @@ class App extends Component {
                                     <Route path="/youtubesearchapp" component={YouTubeSearchApp} />
                                     <Route path="/booklistapp" component={BookListApp} />
                                     <Route path="/weatherapp" component={WeatherApp} />
+                                    <Route path="/reduxbankapp" component={ReduxBankApp} />
                                 </div>
                             </div>
                         </div>
