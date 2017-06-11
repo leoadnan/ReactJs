@@ -19,10 +19,10 @@ class BookList extends Component {
    render() {
       return (
          <div>
-         <ul className="list-group col-lg-4">
-            {this.renderList()}
-         </ul>
-         <BookDetail />
+            <ul className="list-group col-lg-4">
+               {this.renderList()}
+            </ul>
+            <BookDetail />
          </div>
       );
    }
@@ -30,7 +30,7 @@ class BookList extends Component {
 
 function mapStateToProps(state) {
    //whatever it returns will show up as props
-   //inside fo booklist
+   //inside of booklist
    return {
       books: state.books
    }
