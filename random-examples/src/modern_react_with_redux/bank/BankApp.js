@@ -31,7 +31,7 @@ class BankApp extends Component {
             <br/>
             <div className="exchange" onClick={this.props.onToggle}>
                <strong>Exchange Rates:</strong>
-               <div className={this.props.showExchange? 'exchange--visible' : 'exchange--closed'}>
+               <div style={this.props.showExchange ? {display: 'none'} : {display: 'block'}}>
                   <strong>$1 USD =</strong>
                   <span className="rate">0.9990 EUR</span> <span className="rate">0.7989 GBP</span> <span className="rate">710.15 JPY</span>
                </div>
@@ -51,7 +51,7 @@ BankApp.propTypes = {
 const mapStateToProps = (state) => {
    return {
       balance: state.balance.balance,
-      showExchange: state.ui.showExchange
+      showExchange: state.ui.showInfo
    }
 }
 const mapDispatchToProps = (dispatch) => {
